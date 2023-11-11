@@ -1,0 +1,30 @@
+<div class="login-space">
+  <div class="login-space__form">
+    <form [formGroup]="myForm">
+      <label>Email</label>
+      <input formControlName="email"type="email">
+      <label>Password</label>
+      <input formControlName="password" type="password">
+      <button>Login</button>
+    </form>
+  </div>
+  <div class="login-space__output">
+    <div>
+
+
+    <div >
+      {{"object: {"}}
+    </div>
+
+    <div style="padding-left: 120px">
+     email: {{myForm.value.email}}
+    </div>
+    <div style="padding-left: 120px">
+     password: {{myForm.value.password}}
+    </div>
+    <div style="padding-left: 100px">
+      {{"}"}}
+    </div>
+    </div>
+  </div>
+</div>

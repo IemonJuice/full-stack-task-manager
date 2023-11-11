@@ -1,0 +1,31 @@
+<div class="register-space">
+
+  <div class="register-space__output">
+    <div>
+
+
+      <div >
+        {{"object: {"}}
+      </div>
+
+      <div style="padding-left: 120px">
+        email: {{myForm.value.email}}
+      </div>
+      <div style="padding-left: 120px">
+        password: {{myForm.value.password}}
+      </div>
+      <div style="padding-left: 100px">
+        {{"}"}}
+      </div>
+    </div>
+  </div>
+  <div class="register-space__form">
+    <form [formGroup]="myForm">
+      <label>Email</label>
+      <input formControlName="email"type="email">
+      <label>Password</label>
+      <input formControlName="password" type="password">
+      <button>register</button>
+    </form>
+  </div>
+</div>

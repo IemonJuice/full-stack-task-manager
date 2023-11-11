@@ -1,0 +1,112 @@
+.tasks-wrapper {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  outline: 1px solid white;
+  color: black;
+  gap: 10px;
+
+  & > div {
+    overflow: auto;
+    width: 50%;
+    height: 100%;
+  }
+
+  & > div > div {
+    position: relative;
+    margin: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+
+    h2 {
+      max-width: 70%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "Arial Black";
+      font-size: 4em;
+    }
+
+    h3 {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-family: "Arial Black";
+      font-size: 2em;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    & {
+      width: 98%;
+      flex-direction: column;
+      height: 90vh;
+
+      div {
+        width: 100%;
+      }
+
+      .editor {
+        height: 10%;
+      }
+    }
+  }
+}
+
+.done-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.2s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.editor__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 3em;
+  font-family: system-ui;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  input{
+    width:80%;
+    height:50px;
+  }
+  textarea{
+    width:80%;
+    max-width: 83%;
+    min-width: 70%;
+    min-height: 200px;
+    max-height: 250px;
+    height:200px;
+  }
+  button{
+    width: 80%;
+    color: white;;
+    outline: 1px solid white;
+    background-color: black;
+    font-weight: lighter;
+    &:hover{
+      background-color:white;
+      color:black;
+      cursor:pointer;
+    }
+  }
+}

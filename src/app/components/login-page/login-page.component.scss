@@ -1,0 +1,86 @@
+.login-space {
+  width: 90%;
+  height: 75vh;
+  outline: 1px solid white;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    & {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .login-space__form {
+    width: 50%;
+    background-color: white;
+    color: black;
+    height: 100%;
+    @media (max-width: 768px) {
+      & {
+        padding-top: 40px;
+        padding-bottom:40px;
+        width: 100%;
+        button{
+          margin-top: 25px;
+
+        }
+      }
+    }
+
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      label {
+        font-size: 4em;
+        font-family: "Arial Black", serif;
+      }
+
+      input {
+        background-color: black;
+        width: 90%;
+        height: 75px;
+        font-size: 3em;
+        color: white;
+      }
+
+      button {
+        width: 90%;
+        height: 100px;
+        outline: 1px solid black;
+        background-color: white;
+        font-size: 3em;
+        font-family: "Arial Black";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 15px 1px 5px #000000;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+
+      }
+    }
+  }
+
+  .login-space__output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 50%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    font-family: "Fira Code", serif;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="tasks-wrapper">
+  <div>
+    <div *ngFor="let task of tasks">
+      <div>
+        <h2>{{task.task_name}}</h2>
+      </div>
+      <div>
+        <h3>{{task.task_description}}</h3>
+      </div>
+      <div class="done-btn"><img ngSrc="./assets/cancel_FILL0_wght400_GRAD0_opsz24.png" alt="" height="24" width="24">
+      </div>
+    </div>
+  </div>
+  <div class="editor">
+    <form [formGroup]="taskForm" class="editor__form">
+      <label style="color: white">Task name</label>
+      <input formControlName="taskName" type="text">
+      <label  style="color: white">Task description</label>
+      <textarea formControlName="taskDescription"   type="text"></textarea>
+      <button (click)="addTask()">Add task</button>
+    </form>
+  </div>
+
+</div>
