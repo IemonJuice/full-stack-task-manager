@@ -51,6 +51,9 @@
 
       .editor {
         height: 10%;
+        @media(max-width: 768px) {
+          height: 50%;
+        }
       }
     }
   }
